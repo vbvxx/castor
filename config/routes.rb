@@ -5,7 +5,12 @@ Rails.application.routes.draw do
   get 'castor' => 'pages#home'
   get 'pages/test'
   get 'test' => 'pages#test'
+  #book page
   get 'books' => 'books#index'
+  get 'books/:id' => 'books#show'
+  post 'books' => 'books#create'
+  patch 'books/:id' => 'books#update'
+  #root
   root 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
