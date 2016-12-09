@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  get 'books/index'
+
   get 'pages/home'
   get 'castor' => 'pages#home'
   get 'pages/test'
   get 'test' => 'pages#test'
+  get 'books' => 'books#index'
   root 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
